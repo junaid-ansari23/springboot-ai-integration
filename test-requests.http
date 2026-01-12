@@ -1,0 +1,65 @@
+### Health Check
+GET http://localhost:8080/api/chat/health
+
+###
+
+### Simple Chat Request
+POST http://localhost:8080/api/chat
+Content-Type: application/json
+
+{
+  "message": "What is Spring Boot?"
+}
+
+###
+
+### Chat with System Instructions
+POST http://localhost:8080/api/chat/with-system
+Content-Type: application/json
+
+{
+  "systemMessage": "You are a helpful Java programming expert who explains concepts clearly and concisely.",
+  "userMessage": "Explain dependency injection in Spring"
+}
+
+###
+
+### Creative Writing Request
+POST http://localhost:8080/api/chat
+Content-Type: application/json
+
+{
+  "message": "Write a haiku about programming in Java"
+}
+
+###
+
+### Streaming Chat Request (Server-Sent Events)
+POST http://localhost:8080/api/chat/stream
+Content-Type: application/json
+
+{
+  "message": "Explain the benefits of using Spring AI for AI integration in Java applications"
+}
+
+###
+
+### Code Generation Request
+POST http://localhost:8080/api/chat
+Content-Type: application/json
+
+{
+  "message": "Write a simple Java method that reverses a string"
+}
+
+###
+
+### Technical Question
+POST http://localhost:8080/api/chat/with-system
+Content-Type: application/json
+
+{
+  "systemMessage": "You are an expert software architect with deep knowledge of microservices and cloud-native applications.",
+  "userMessage": "What are the key differences between monolithic and microservices architectures?"
+}
+
